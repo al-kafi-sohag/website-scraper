@@ -79,7 +79,7 @@ The Website Scraper is designed to extract data from multiple websites with vary
 3. Wait for the scraping to Complete.
 
 4. View the Results:
-   Open the `result/` folder and locate `result.csv` to review the summaries.
+   Open the `result/` folder and locate `result.csv` to review the results.
 
 ## Project Structure
 
