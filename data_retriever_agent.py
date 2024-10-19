@@ -3,6 +3,7 @@ import json
 from groq import Groq
 from dotenv import load_dotenv
 from SimplerLLM.tools.json_helpers import extract_json_from_text
+from logger_config import logger
 
 load_dotenv()
 
@@ -54,91 +55,97 @@ If an error occurs or if you are unable to process the request, return:
 """
 
 def connect_to_ai(data):
-  print(f"\n[INFO] Initiated Data retriever agent")
-  try:
-    messages = [
-        {"role": "system", "content": prompt},
-        {"role": "user", "content": f"Extract the room data from here:{data}"}
-    ]
-    response = client.chat.completions.create(model=os.getenv("MODEL"), messages=messages)
-    if response:
-      print(f"[SUCCESS] Receieved response from AI")
-      return response.choices[0].message.content
-    else:
-      print(f"[Warning] AI is returning empty response")
-      return None
-      
-  except Exception as e:
-    raise RuntimeError(f"[ERROR] {e}")
-  
+    logger.info("Initiating AI connection for data retrieval")
+    try:
+        messages = [
+            {"role": "system", "content": prompt},
+            {"role": "user", "content": f"Extract the room data from here: {data}"}
+        ]
+        response = client.chat.completions.create(model=os.getenv("MODEL"), messages=messages)
+        if response and response.choices:
+            logger.info("Successfully received AI response")
+            return response.choices[0].message.content
+        else:
+            logger.warning("AI returned an empty or invalid response")
+            return None
+    except Exception as e:
+        logger.error(f"Error during AI connection: {str(e)}")
+        return None
+
 def extract_data(response):
-  print(f"\n[INFO] Initiated extracting data")
-  try:
-    json_data = extract_json_from_text(response)
-    if json_data:
-      print(f"[SUCCESS] Success fully extracted the data")
-      data = json_data[0]
-      status = data.get('status')
-      message = data.get('message')
-      data = data.get('data')
-      
-      match status:
-        case 1:
-          print(f"[INFO] {message}")
-          return data
-        case 0:
-          print(f"[WARNING] {message}")
-          return None
-        case -1:
-          print(f"[Error] {message}")
-          return None
-        case _:
-          print(f"[ERROR] Unknown status: {status}")
-          return None
+    logger.info("Extracting data from AI response")
+    if not response:
+        logger.warning("No response to extract data from")
+        return None
+    
+    try:
+        json_data = extract_json_from_text(response)
+        if not json_data:
+            logger.error("Failed to extract JSON data from AI response")
+            return None
         
-    else:
-      print(f"[ERROR] No data retrieved from AI")
-  except Exception as e:
-    raise RuntimeError(f"[ERROR] {e}")
+        data = json_data[0]
+        status = data.get('status')
+        message = data.get('message')
+        extracted_data = data.get('data')
+        
+        if status == 1:
+            logger.info(f"Data extraction successful: {message}")
+            return extracted_data
+        elif status == 0:
+            logger.warning(f"No data found: {message}")
+        elif status == -1:
+            logger.error(f"Error in data extraction: {message}")
+        else:
+            logger.error(f"Unknown status code: {status}")
+        
+        return None
+    except Exception as e:
+        logger.error(f"Error during data extraction: {str(e)}")
+        return None
 
 def chunk_data(data):
-  print(f"\n[INFO] Initiated chunking data")
-  try:
-    words = data.split()
-    chunks = []
-    current_chunk = []
-    for word in words:
-        current_chunk.append(word)
-        if len(current_chunk) >= int(os.getenv("MAX_WORDS")):
-            chunks.append(' '.join(current_chunk))
-            current_chunk = []
-    if current_chunk:
-        chunks.append(' '.join(current_chunk))
-    print(f"[SUCCESS] Successfully chunked the data")
-    print(f"[Info] Total chunk created: {len(chunks)}")
-    return chunks
-  except Exception as e:
-    raise RuntimeError(f"[ERROR] {e}")
+    logger.info("Initiating data chunking process")
+    if not data:
+        logger.warning("No data to chunk")
+        return []
+    
+    try:
+        words = data.split()
+        max_words = int(os.getenv("MAX_WORDS", 1000))  # Default to 1000 if not set
+        chunks = [' '.join(words[i:i+max_words]) for i in range(0, len(words), max_words)]
+        
+        logger.info(f"Data chunking completed. Total chunks created: {len(chunks)}")
+        return chunks
+    except Exception as e:
+        logger.error(f"Error during data chunking: {str(e)}")
+        return []
 
 def retrieve_room_data(data):
-  chunked_data = chunk_data(data)
-  result = []
+    if not data:
+        logger.warning("No data provided for room retrieval")
+        return []
 
-  for chunk in chunked_data:
-    print(f"\n[INFO] Processing chunk {chunked_data.index(chunk) + 1} of {len(chunked_data)}")
+    chunked_data = chunk_data(data)
+    result = []
+
+    for index, chunk in enumerate(chunked_data, 1):
+        logger.info(f"Processing chunk {index} of {len(chunked_data)}")
+        
+        response = connect_to_ai(chunk)
+        if response:
+            chunk_result = extract_data(response)
+            if chunk_result:
+                result.extend(chunk_result)
+        else:
+            logger.warning(f"No AI response for chunk {index}")
     
-    response = connect_to_ai(chunk)
-    if response:
-      chunk_result = extract_data(response)
-      if chunk_result:
-        result.extend(chunk_result)
+    logger.info(f"Room data retrieval completed. Total results: {len(result)}")
+    
+    if result:
+        logger.debug("Retrieved room data (first 3 entries):")
+        logger.debug(json.dumps(result[:3], indent=2, ensure_ascii=False))
     else:
-      print(f"[WARNING] No response from AI for chunk {chunked_data.index(chunk) + 1}")
-  
-  print(f"\n[INFO] Processed all {len(chunked_data)} chunks")
-  print(f"[INFO] Total results retrieved: {len(result)}")
-  
-  print("\nPretty-printed JSON result:")
-  print(json.dumps(result, indent=2, ensure_ascii=False))
+        logger.warning("No room data retrieved")
 
-  return result
+    return result
