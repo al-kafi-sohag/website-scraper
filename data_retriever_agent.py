@@ -20,12 +20,12 @@ Once you identify the data, output it in the following JSON format:
   "message": "Successfully retrived the data",
   "data": [
       {
-          "name": "name of the room"
+          "name": "name of the room",
           "address": "address of the room",
           "price": "price with currency if avaiable"
       },
       {
-          "name": "name of another room"
+          "name": "name of another room",
           "address": "address of another room",
           "price": "price with currency if avaiable"
       }
@@ -64,6 +64,7 @@ def connect_to_ai(data):
         response = client.chat.completions.create(model=os.getenv("MODEL"), messages=messages)
         if response and response.choices:
             logger.info("Successfully received AI response")
+            logger.debug(f"Response: {response.choices[0].message.content[:100]}...")
             return response.choices[0].message.content
         else:
             logger.warning("AI returned an empty or invalid response")

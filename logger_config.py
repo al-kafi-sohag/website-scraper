@@ -28,6 +28,9 @@ def setup_logger(name, log_file, level=logging.INFO):
 
     return logger
 
-# Create and configure the logger
-logger = setup_logger('scraper_logger', 'scraper.log')
+log_level_str = os.getenv('LOG_LEVEL', 'INFO').upper()
+log_level = getattr(logging, log_level_str, logging.INFO)
+log_file = os.getenv('LOG_FILE', 'scraper.log')
+
+logger = setup_logger('scraper_logger', log_file, log_level)
 

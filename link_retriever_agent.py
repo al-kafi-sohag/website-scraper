@@ -16,7 +16,7 @@ Once you identify the correct URL, output it in the following JSON format:
 
 {
   "status": 1,
-  "message": "Successfully retrived the url"
+  "message": "Successfully retrived the url",
   "url": "URL_here"
 }
 
@@ -24,7 +24,7 @@ If no suitable URL is found, return:
 
 {
   "status": 0,
-  "message": "No Suitable URL"
+  "message": "No Suitable URL",
   "url": null
 }
 
@@ -32,7 +32,7 @@ If an error occurs or if you are unable to process the request, return:
 
 {
   "status": -1,
-  "message": add the error
+  "message": add the error,
   "url": null
 }
 Make sure to analyze the URLs carefully, and prioritize URLs that include terms indicating a room list page. 
@@ -42,13 +42,6 @@ Do not include any additional text, comments, or explanations outside of the JSO
 """
 
 def connect_to_ai(urls):
-    """
-    Connects to the AI service and processes the given URLs to find the room link.
-    Args:
-    urls (list): A list of URLs to analyze.
-    Returns:
-    dict: A dictionary containing the status, message, and room_url (if found).
-    """
     logger.info("Initiated Link retriever agent")
     try:
         messages = [
@@ -65,7 +58,7 @@ def connect_to_ai(urls):
             
     except Exception as e:
         logger.error(f"Error in connect_to_ai: {e}")
-        raise RuntimeError(f"Error in connect_to_ai: {e}")
+        return None
   
 def extract_link(response):
     logger.info("Initiated extracting data")
@@ -96,14 +89,14 @@ def extract_link(response):
             logger.error("No data retrieved from AI")
     except Exception as e:
         logger.error(f"Error in extract_link: {e}")
-        raise RuntimeError(f"Error in extract_link: {e}")
+        return None
 
 def retrieve_room_link(urls):
     response = connect_to_ai(urls)
     if response:
         url = extract_link(response)
         logger.info(f"Processed all {len(urls)} urls")
-        logger.info(f"Total results retrieved: {1 if url else 0}")
+        logger.info(f"Total results retrieved: {len(url)}")
         logger.info(f"Retrieved URL: {url}")
         return url
     else:

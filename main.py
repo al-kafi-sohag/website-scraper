@@ -68,7 +68,7 @@ def process_room_soup(soup):
     
     # Remove any remaining HTML tags
     text = re.sub('<[^<]+?>', '', text)
-    logger.debug(f"Processed text: {text[:100]}...")  # Log first 500 characters
+    logger.debug(f"Processed text: {text[:100]}...")
     return text
 
 def main(base_url):
@@ -94,4 +94,4 @@ def main(base_url):
         logger.error("Failed to scrape initial page")
 
 if __name__ == "__main__":
-    main('https://www.tonsofrentals.com')
+    main('https://houseinorderpm.com/')
