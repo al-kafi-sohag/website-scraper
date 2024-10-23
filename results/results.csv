@@ -1,0 +1,235 @@
+URL_Scrapped,Website_Address,Street_Number,Street_Name,Zipcode,State,City,County,Timestamp,Latitude,Longitude,Beds,Bath,Price,Available,Note
+https://www.baldwinrealestateinc.com/,,,,,,,,,,,,,,,Room link retrieval failed
+https://www.ashevillepropertymanagementinc.com/,,,,,,,,,,,,,,,Room link retrieval failed
+https://www.azaleamanagement.com/search-listings/,,,,,,,,,,,,,,,Room details retrieval failed
+https://www.houseinorderpm.com/homes-for-rent,"50 Crestmont Ave. Asheville, NC 28806",,,,,,,2024-10-23 06:44:21,,,,,$850,Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"23 Crider Circle RV Spot Maggie Valley, NC 28751",,,,,,,2024-10-23 06:44:21,,,,,"$3,995",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"26 Edgemont Rd. Asheville, NC 28801",,,,,,,2024-10-23 06:44:21,,,,,"$3,400",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"46 Garden Circle Asheville, NC 28806",,,,,,,2024-10-23 06:44:21,,,,,"$2,500",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"358 London Road Asheville, NC 28803",,,,,,,2024-10-23 06:44:21,,,,,$925,Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"1 Katra Lane Asheville, NC 28805",,,,,,,2024-10-23 06:44:21,,,,,"$1,425",11/1/2024,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"38 Lone Coyote Ridge Unit A Fletcher, NC 28732",,,,,,,2024-10-23 06:44:21,,,,,"$2,600",11/1/2024,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"135 Broad St. Unit 2 Asheville, NC 28801",,,,,,,2024-10-23 06:44:21,,,,,"$2,400",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"135 Broad St. Unit 3 Asheville, NC 28801",,,,,,,2024-10-23 06:44:21,,,,,"$1,795",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"46 Spicewood Rd. Weaverville, NC 28787",,,,,,,2024-10-23 06:44:21,,,,,"$1,795",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"46 Spicewood Rd. Unit C Weaverville, NC 28787",,,,,,,2024-10-23 06:44:21,,,,,"$2,200",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"1020 Baldwin Commons Drive Arden, NC 28704",,,,,,,2024-10-23 06:44:21,,,,,"$2,400",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"329 Mountain Laurel Asheville, NC 28805",,,,,,,2024-10-23 06:44:21,,,,,"$1,560",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"223 Williams Rd Fletcher, NC 28732",,,,,,,2024-10-23 06:44:21,,,,,"$1,200",11/5/2024,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"114 Shamrock Park Drive Landrum, SC 29356",,,,,,,2024-10-23 06:44:21,,,,,"$1,750",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"7 Sirenas Way Unit A Fletcher, NC 28732",,,,,,,2024-10-23 06:44:21,,,,,"$1,725",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"28 Edgemont Rd Unit 12 Asheville, NC 28801",,,,,,,2024-10-23 06:44:21,,,,,"$1,825",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"30 Edgemont Rd Unit 24 Asheville, NC 28801",,,,,,,2024-10-23 06:44:21,,,,,"$1,425",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"1451 Dana Rd Hendersonville, NC 28792",,,,,,,2024-10-23 06:44:21,,,,,"$2,300",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"131 W Chestnut St Unit B Asheville, NC 28801",,,,,,,2024-10-23 06:44:21,,,,,"$1,400",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"9 Kenilworth Knolls Unit 217 Asheville, NC 28805",,,,,,,2024-10-23 06:44:21,,,,,,Now,Data processed successfully
+https://www.tonsofrentals.com/asheville-homes-for-rent?&sort=amount%7Cdesc,"643 Clearview Drive, Hendersonville, NC 28792",,,,,,,2024-10-23 06:44:24,,,,,"$1,495/mo.",Immediately,Data processed successfully
+https://www.tonsofrentals.com/asheville-homes-for-rent?&sort=amount%7Cdesc,"3 Dadoo Drive, Asheville, NC 28806",,,,,,,2024-10-23 06:44:24,,,,,"$1,995/mo.",Immediately,Data processed successfully
+https://www.tonsofrentals.com/asheville-homes-for-rent?&sort=amount%7Cdesc,"413 Pocono Court, Arden, NC 28704",,,,,,,2024-10-23 06:44:24,,,,,"$1,695/mo.",Immediately,Data processed successfully
+https://www.tonsofrentals.com/asheville-homes-for-rent?&sort=amount%7Cdesc,"33 Madeline Avenue, Asheville, NC 28806",,,,,,,2024-10-23 06:44:24,,,,,"$2,295/mo.",Immediately,Data processed successfully
+https://www.tonsofrentals.com/asheville-homes-for-rent?&sort=amount%7Cdesc,"165 Wiltshire Circle, Fletcher, NC 28732",,,,,,,2024-10-23 06:44:24,,,,,"$2,195/mo.",Immediately,Data processed successfully
+https://www.tonsofrentals.com/asheville-homes-for-rent?&sort=amount%7Cdesc,"71 East Street, Asheville, NC 28803",,,,,,,2024-10-23 06:44:24,,,,,"$2,195/mo.",Immediately,Data processed successfully
+https://www.tonsofrentals.com/asheville-homes-for-rent?&sort=amount%7Cdesc,"7 Shadowbrook Lane B, Weaverville, NC 28787",,,,,,,2024-10-23 06:44:24,,,,,"$1,350/mo.",10-25-2024,Data processed successfully
+https://www.tonsofrentals.com/asheville-homes-for-rent?&sort=amount%7Cdesc,"2670 Seminole Drive, Hendersonville, NC 28791",,,,,,,2024-10-23 06:44:24,,,,,"$2,595/mo.",12-01-2024,Data processed successfully
+https://www.tonsofrentals.com/asheville-homes-for-rent?&sort=amount%7Cdesc,"30 Cedar Street, Asheville, NC 28803",,,,,,,2024-10-23 06:44:24,,,,,"$2,395/mo.",11-15-2024,Data processed successfully
+https://www.tonsofrentals.com/asheville-homes-for-rent?&sort=amount%7Cdesc,"6 Chambers Garden Dr, Arden, NC 28704",,,,,,,2024-10-23 06:44:24,,,,,"$2,495/mo.",Immediately,Data processed successfully
+https://www.tonsofrentals.com/asheville-homes-for-rent?&sort=amount%7Cdesc,"234 Wash Creek Drive #A, Hendersonville, NC 28739",,,,,,,2024-10-23 06:44:24,,,,,"$1,895/mo.",11-01-2024,Data processed successfully
+https://www.tonsofrentals.com/asheville-homes-for-rent?&sort=amount%7Cdesc,"125 S. Sunberry Trail, Fletcher, NC 28732",,,,,,,2024-10-23 06:44:24,,,,,"$2,495/mo.",Immediately,Data processed successfully
+https://www.tonsofrentals.com/asheville-homes-for-rent?&sort=amount%7Cdesc,"705 N. Wild Oaks Lane, Hendersonville, NC 28791",,,,,,,2024-10-23 06:44:24,,,,,"$2,195/mo.",11-01-2024,Data processed successfully
+https://www.tonsofrentals.com/asheville-homes-for-rent?&sort=amount%7Cdesc,"9 White Ave, Asheville, NC 28803",,,,,,,2024-10-23 06:44:24,,,,,"$2,195/mo.",Immediately,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"187 Swannanoa Ave, Asheville, NC 28806",,,,,,,2024-10-23 06:44:26,,,,,"$2,500",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"33 Starnes Ave Apt 3, Asheville, NC 28801",,,,,,,2024-10-23 06:44:26,,,,,"$1,325",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"7 Night Owl Haven, Fletcher, NC 28732",,,,,,,2024-10-23 06:44:26,,,,,"$2,200",12/12/2024,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"114.5 Clingman Ave, Asheville, NC 28801",,,,,,,2024-10-23 06:44:26,,,,,"$1,500",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"11 Jeff Dr, Asheville, NC 28806-8858",,,,,,,2024-10-23 06:44:26,,,,,"$2,100",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"64 Mildred Ave Unit 1/2, Asheville, NC 28806",,,,,,,2024-10-23 06:44:26,,,,,"$1,450",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"61 Haywood Rd, Asheville, NC 28806",,,,,,,2024-10-23 06:44:26,,,,,"$3,200",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"205 Laurel Ridge Road, Asheville, NC 28805",,,,,,,2024-10-23 06:44:26,,,,,"$3,200",11/1/2024,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"61 Sevier St, Asheville, NC 28804",,,,,,,2024-10-23 06:44:26,,,,,"$1,850",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"77 Conestee St, Asheville, NC 28801-1241",,,,,,,2024-10-23 06:44:26,,,,,"$1,850",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"55 S Market Street 414, Asheville, NC 28801",,,,,,,2024-10-23 06:44:26,,,,,"$2,800",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"17 Cole St, Asheville, NC 28803",,,,,,,2024-10-23 06:44:26,,,,,"$1,425",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"142.5 Beaverdam Rd, Asheville, NC 28804",,,,,,,2024-10-23 06:44:26,,,,,"$1,995",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"20 Rocking Porch Rd, Asheville, NC 28805",,,,,,,2024-10-23 06:44:26,,,,,"$1,375",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"43 Ravenscroft Drive # 1, Asheville, NC 28801",,,,,,,2024-10-23 06:44:26,,,,,"$1,175",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"37 Skyview Pl #3, Asheville, NC 28804",,,,,,,2024-10-23 06:44:26,,,,,"$1,250",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"105 Edwin Pl Apt 5, Asheville, NC 28801-1494",,,,,,,2024-10-23 06:44:26,,,,,"$2,400",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"432 Riverview Dr, Asheville, NC 28806",,,,,,,2024-10-23 06:44:26,,,,,"$1,200",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"15 Pinedale Rd, Candler, NC 28715",,,,,,,2024-10-23 06:44:26,,,,,"$1,395",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"37 Skyview Pl #6, Asheville, NC 28804",,,,,,,2024-10-23 06:44:26,,,,,"$1,650",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"116 East Chestnut Street Apt 32, Asheville, NC 28801",,,,,,,2024-10-23 06:44:26,,,,,"$1,350",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"1010 Hendersonville Rd Apt 8, Asheville, NC 28803",,,,,,,2024-10-23 06:44:26,,,,,$960,Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"145 Citadel Drive Apt 149G, Cullowhee, NC 28723",,,,,,,2024-10-23 06:44:26,,,,,"$1,100",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"93 Citadel Drive Apt 103, Cullowhee, NC 28723",,,,,,,2024-10-23 06:44:26,,,,,"$1,770",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"24 Union St Unit 1, Asheville, NC 28804",,,,,,,2024-10-23 06:44:26,,,,,"$2,750",10/24/2024,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"567 Caribou Rd, Asheville, NC 28803",,,,,,,2024-10-23 06:44:26,,,,,"$2,250",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"1010 Hendersonville Rd Apt 4, Asheville, NC 28803",,,,,,,2024-10-23 06:44:26,,,,,"$1,450",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"40 Little Martha Ln, Waynesville, NC 28786",,,,,,,2024-10-23 06:44:26,,,,,"$1,450",Now,Data processed successfully
+https://www.ashevillepropertymanagementinc.com/,,,,,,,,,,,,,,,Room link retrieval failed
+https://www.azaleamanagement.com/,,,,,,,,,,,,,,,Room link retrieval failed
+https://www.houseinorderpm.com/homes-for-rent,"50 Crestmont Ave., Asheville, NC 28806",,,,,,,2024-10-23 06:45:35,,,,,"$3,400",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"46 Garden Circle, Asheville, NC 28806",,,,,,,2024-10-23 06:45:35,,,,,"$2,500",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"358 London Road, Asheville, NC 28803",,,,,,,2024-10-23 06:45:35,,,,,$925,Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"1 Katra Lane, Asheville, NC 28805",,,,,,,2024-10-23 06:45:35,,,,,"$1,425",11/1/2024,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"38 Lone Coyote Ridge Unit A, Fletcher, NC 28732",,,,,,,2024-10-23 06:45:35,,,,,"$2,600",11/1/2024,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"135 Broad St. Unit 2, Asheville, NC 28801",,,,,,,2024-10-23 06:45:35,,,,,"$2,400",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"135 Broad St. Unit 3, Asheville, NC 28801",,,,,,,2024-10-23 06:45:35,,,,,"$1,795",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"46 Spicewood Rd. Unit B, Weaverville, NC 28787",,,,,,,2024-10-23 06:45:35,,,,,"$1,795",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"46 Spicewood Rd. Unit C, Weaverville, NC 28787",,,,,,,2024-10-23 06:45:35,,,,,"$2,200",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"1020 Baldwin Commons Drive, Arden, NC 28704",,,,,,,2024-10-23 06:45:35,,,,,"$2,400",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"329 Moutain Laurel, Asheville, NC 28805",,,,,,,2024-10-23 06:45:35,,,,,"$1,560",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"223 Williams Rd, Fletcher, NC 28732",,,,,,,2024-10-23 06:45:35,,,,,"$1,200",11/5/2024,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"114 Shamrock Park Drive, Landrum, SC 29356",,,,,,,2024-10-23 06:45:35,,,,,"$1,750",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"7 Sirenas Way Unit A, Fletcher, NC 28732",,,,,,,2024-10-23 06:45:35,,,,,"$1,725",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"28 Edgemont Rd Unit 12, Asheville, NC 28801",,,,,,,2024-10-23 06:45:35,,,,,"$1,825",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"30 Edgemont Rd Unit 24, Asheville, NC 28801",,,,,,,2024-10-23 06:45:35,,,,,"$1,425",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"1451 Dana Rd, Hendersonville, NC 28792",,,,,,,2024-10-23 06:45:35,,,,,"$2,300",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"131 W Chestnut St Unit B, Asheville, NC 28801",,,,,,,2024-10-23 06:45:35,,,,,"$1,400",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"9 Kenilworth Knolls Unit 217, Asheville, NC 28805",,,,,,,2024-10-23 06:45:35,,,,,$850,Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"23 Crider Circle RV Spot, Maggie Valley, NC 28751",,,,,,,2024-10-23 06:45:35,,,,,"$3,995",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"26 Edgemont Rd., Asheville, NC 28801",,,,,,,2024-10-23 06:45:35,,,,,,Now,Data processed successfully
+https://www.baldwinrealestateinc.com/,,,,,,,,,,,,,,,Room link retrieval failed
+https://www.pattonallenpm.com/for-rent/,"187 Swannanoa Ave Asheville , NC 28806",,,,,,,2024-10-23 06:45:39,,,,,"$2,500",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"33 Starnes Ave Apt 3 Asheville , NC 28801",,,,,,,2024-10-23 06:45:39,,,,,"$1,325",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"7 Night Owl Haven Fletcher , NC 28732",,,,,,,2024-10-23 06:45:39,,,,,"$2,200",12/12/2024,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"114.5 Clingman Ave Asheville , NC 28801",,,,,,,2024-10-23 06:45:39,,,,,"$1,500",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"11 Jeff Dr Asheville , NC 28806-8858",,,,,,,2024-10-23 06:45:39,,,,,"$2,100",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"64 Mildred Ave Unit 1/2 Asheville , NC 28806",,,,,,,2024-10-23 06:45:39,,,,,"$1,450",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"61 Haywood Rd Asheville , NC 28806",,,,,,,2024-10-23 06:45:39,,,,,"$1,200",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"205 Laurel Ridge Road Asheville , NC 28805",,,,,,,2024-10-23 06:45:39,,,,,"$3,200",11/1/2024,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"61 Sevier St Asheville , NC 28804",,,,,,,2024-10-23 06:45:39,,,,,"$1,770",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"24 Union St Unit 1 Asheville , NC 28804",,,,,,,2024-10-23 06:45:39,,,,,"$1,700",10/24/2024,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"567 Caribou Rd Asheville , NC 28803",,,,,,,2024-10-23 06:45:39,,,,,"$2,750",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"77 Conestee St Asheville , NC 28801-1241",,,,,,,2024-10-23 06:45:39,,,,,"$1,850",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"55 S Market Street 414 Asheville , NC 28801",,,,,,,2024-10-23 06:45:39,,,,,"$2,800",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"17 Cole St Asheville , NC 28803",,,,,,,2024-10-23 06:45:39,,,,," $2,800 *No $1,425 listed here this number was obtained for the line: Unit has 4 bedrooms  not 2  however there was  line for >3br/$2,200, so 7 was changed  2 bedroom,  however unit is listed as 4/2.5",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"142.5 Beaverdam Rd Asheville , NC 28804",,,,,,,2024-10-23 06:45:39,,,,,"$1,995",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"20 Rocking Porch Rd Asheville , NC 28805",,,,,,,2024-10-23 06:45:39,,,,,"$1,375",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"43 Ravenscroft Drive # 1 Asheville , NC 28801",,,,,,,2024-10-23 06:45:39,,,,,"$1,175",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"37 Skyview Pl #3 Asheville , NC 28804",,,,,,,2024-10-23 06:45:39,,,,,"$1,250",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"105 Edwin Pl Apt 5 Asheville , NC 28801-1494",,,,,,,2024-10-23 06:45:39,,,,,"$895 was based on $2,395 then rent stated above single bed room ($2,400)",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"432 Riverview Dr Asheville , NC 28806",,,,,,,2024-10-23 06:45:39,,,,,"$2,200",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"15 Pinedale Rd Candler , NC 28715",,,,,,,2024-10-23 06:45:39,,,,,"$1,395",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"37 Skyview Pl #6 Asheville , NC 28804",,,,,,,2024-10-23 06:45:39,,,,,"$1,650",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"116 East Chestnut Street Apt 32 Asheville , NC 28801",,,,,,,2024-10-23 06:45:39,,,,,"$1,350",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"1010 Hendersonville Rd Apt 8 Asheville , NC 28803",,,,,,,2024-10-23 06:45:39,,,,,$960,Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"145 Citadel Drive Apt 149G Cullowhee , NC 28723",,,,,,,2024-10-23 06:45:39,,,,,"$1,100",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"93 Citadel Drive Apt 103 Cullowhee , NC 28723",,,,,,,2024-10-23 06:45:39,,,,,"$1,600",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"40 Little Martha Ln Waynesville , NC 28786",,,,,,,2024-10-23 06:45:39,,,,,"$1,450",Now,Data processed successfully
+https://www.pattonallenpm.com/for-rent/,"1010 Hendersonville Rd Apt 4 Asheville , NC 28803",,,,,,,2024-10-23 06:45:39,,,,,"$1,450",Now,Data processed successfully
+https://www.cbkrentals.com/,,,,,,,,,,,,,,,Room link retrieval failed
+https://www.blackbearwnc.com/rentals,,,,,,,,,,,,,,,Room details retrieval failed
+https://www.cpmasheville.com/,,,,,,,,,,,,,,,Room link retrieval failed
+https://www.ellingtonrealtygroup.com/,,,,,,,,,,,,,,,Room link retrieval failed
+https://www.cottonwoodpropertiesnc.com/,,,,,,,,,,,,,,,Room link retrieval failed
+http://www.foleyrealtync.com/,,,,,,,,,,,,,,,Room link retrieval failed
+https://www.kropfrealestatemanagement.com/,,,,,,,,,,,,,,,Room link retrieval failed
+https://www.houseinorderpm.com/homes-for-rent,"50 Crestmont Ave. Asheville, NC 28806",,,,,,,2024-10-23 06:47:36,,,,,$925,Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"1 Katra Lane Asheville, NC 28805",,,,,,,2024-10-23 06:47:36,,,,,"$2,400",11/1/2024,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"329 Moutain Laurel Asheville, NC 28805",,,,,,,2024-10-23 06:47:36,,,,,"$1,725",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"28 Edgemont Rd Unit 12 Asheville, NC 28801",,,,,,,2024-10-23 06:47:36,,,,,"$1,825",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"30 Edgemont Rd Unit 24 Asheville, NC 28801",,,,,,,2024-10-23 06:47:36,,,,,"$1,425",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"1451 Dana Rd Hendersonville, NC 28792",,,,,,,2024-10-23 06:47:36,,,,,"$2,300",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"131 W Chestnut St Unit B Asheville, NC 28801",,,,,,,2024-10-23 06:47:36,,,,,"$1,400",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"9 Kenilworth Knolls Unit 217 Asheville, NC 28805",,,,,,,2024-10-23 06:47:36,,,,,$850,Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"23 Crider Circle Maggie Valley, NC 28751",,,,,,,2024-10-23 06:47:36,,,,,"$3,995",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"26 Edgemont Rd. Asheville, NC 28801",,,,,,,2024-10-23 06:47:36,,,,,"$3,400",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"46 Garden Circle Asheville, NC 28806",,,,,,,2024-10-23 06:47:36,,,,,"$2,500",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"358 London Road Asheville, NC 28803",,,,,,,2024-10-23 06:47:36,,,,,"$1,425",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"38 Lone Coyote Ridge Unit A Fletcher, NC 28732",,,,,,,2024-10-23 06:47:36,,,,,"$2,600",11/1/2024,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"135 Broad St. Unit 2 Asheville, NC 28801",,,,,,,2024-10-23 06:47:36,,,,,"$2,400",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"135 Broad St. Unit 3 Asheville, NC 28801",,,,,,,2024-10-23 06:47:36,,,,,"$1,795",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"46 Spicewood Rd. Unit B Weaverville, NC 28787",,,,,,,2024-10-23 06:47:36,,,,,"$1,795",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"46 Spicewood Rd. Unit C Weaverville, NC 28787",,,,,,,2024-10-23 06:47:36,,,,,"$2,200",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"1020 Baldwin Commons Drive Arden, NC 28704",,,,,,,2024-10-23 06:47:36,,,,,"$1,560",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"223 Williams Rd Fletcher, NC 28732",,,,,,,2024-10-23 06:47:36,,,,,"$1,200",11/5/2024,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"114 Shamrock Park Drive Landrum, SC 29356",,,,,,,2024-10-23 06:47:36,,,,,"$1,750",Now,Data processed successfully
+https://www.houseinorderpm.com/homes-for-rent,"7 Sirenas Way Unit A Fletcher, NC 28732",,,,,,,2024-10-23 06:47:36,,,,,$0,Now,Data processed successfully
+https://www.leslieandassoc.com/apartments,8202 Terra Drive,,,,,,,2024-10-23 06:47:37,,,,,"$1,395.00",,Data processed successfully
+https://www.leslieandassoc.com/apartments,30 Clairmont Avenue,,,,,,,2024-10-23 06:47:37,,,,,"$1,395.00",,Data processed successfully
+https://www.leslieandassoc.com/apartments,85 Merrimon Avenue,,,,,,,2024-10-23 06:47:37,,,,,$850.00,,Data processed successfully
+https://www.leslieandassoc.com/apartments,68 N French Broad Ave #1H,,,,,,,2024-10-23 06:47:37,,,,,"$1,395.00",,Data processed successfully
+https://www.leslieandassoc.com/apartments,56 South Lexington Ave,,,,,,,2024-10-23 06:47:37,,,,,"$1,295.00",,Data processed successfully
+https://www.leslieandassoc.com/apartments,2 Oakview Road,,,,,,,2024-10-23 06:47:37,,,,,"$1,245.00",,Data processed successfully
+https://www.leslieandassoc.com/apartments,453 Kenilworth Road Apt D,,,,,,,2024-10-23 06:47:37,,,,,"$1,095.00",,Data processed successfully
+https://www.leslieandassoc.com/apartments,85 Merrimon Ave Unit 1,,,,,,,2024-10-23 06:47:37,,,,,"$1,195.00",,Data processed successfully
+https://www.leslieandassoc.com/apartments,85 Walnut Street #406,,,,,,,2024-10-23 06:47:37,,,,,"$1,195.00",,Data processed successfully
+https://www.leslieandassoc.com/apartments,100 Coxe Avenue #408,,,,,,,2024-10-23 06:47:37,,,,,"$1,795.00",,Data processed successfully
+https://www.leslieandassoc.com/apartments,82 Merrimon Avenue 3,,,,,,,2024-10-23 06:47:37,,,,,"$1,495.00",,Data processed successfully
+https://www.leslieandassoc.com/apartments,702 Carlyle Way,,,,,,,2024-10-23 06:47:37,,,,,"$1,295.00",,Data processed successfully
+https://www.leslieandassoc.com/apartments,7 Violet Hills Circle 1BR,,,,,,,2024-10-23 06:47:37,,,,,$975.00,,Data processed successfully
+https://www.leslieandassoc.com/apartments,24 Old Chunn’s Cove Rd. #5,,,,,,,2024-10-23 06:47:37,,,,,"$1,145.00",,Data processed successfully
+https://www.leslieandassoc.com/apartments,68 N French Broad Ave #3C,,,,,,,2024-10-23 06:47:37,,,,,"$1,695.00",,Data processed successfully
+https://www.leslieandassoc.com/apartments,265 Charlotte Street 10,,,,,,,2024-10-23 06:47:37,,,,,"$1,995.00",,Data processed successfully
+https://www.leslieandassoc.com/apartments,1746 Tunnel Road,,,,,,,2024-10-23 06:47:37,,,,,"$1,195.00",,Data processed successfully
+https://www.leslieandassoc.com/apartments,Glen-Beale Apartments-2BR HW,,,,,,,2024-10-23 06:47:37,,,,,"$1,295.00",,Data processed successfully
+https://www.leslieandassoc.com/apartments,30 Clairmont Avenue,,,,,,,2024-10-23 06:47:37,,,,,"$1,295.00",,Data processed successfully
+http://www.metropropertyasheville.com/Resident/public/rentals,,,,,,,,,,,,,,,Room details retrieval failed
+http://www.pulliamproperties.com/,,,,,,,,,,,,,,,Room link retrieval failed
+http://www.randppropertymgrs.com/,,,,,,,,,,,,,,,Room link retrieval failed
+http://www.pma-rentals.com/rental_listings,"1305 Pisgah Hwy, Candler, NC 28715",,,,,,,2024-10-23 06:48:54,,,,,"$2,800",Available NOW,Data processed successfully
+http://www.pma-rentals.com/rental_listings,"15 Oakcrest Place, Asheville, NC 28806",,,,,,,2024-10-23 06:48:54,,,,,"$1,750",Available 10/31/2024,Data processed successfully
+http://www.pma-rentals.com/rental_listings,"26 Oakcrest Pl, Asheville, NC 28806",,,,,,,2024-10-23 06:48:54,,,,,"$1,950",Available NOW,Data processed successfully
+http://www.pma-rentals.com/rental_listings,"33 Enka Orchard St, Candler, NC 28715",,,,,,,2024-10-23 06:48:54,,,,,"$2,000",Available NOW,Data processed successfully
+http://www.pma-rentals.com/rental_listings,"6 Cottage St, Asheville, NC 28804",,,,,,,2024-10-23 06:48:54,,,,,"$1,650",Available NOW,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,near Brevard,,,,,,,2024-10-23 06:49:09,,,,,$48/night,AVAILABLE NOW,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,,,,,,,,2024-10-23 06:49:09,,,,,$40/night,,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,,,,,,,,2024-10-23 06:49:09,,,,,$115/night,AVAILABLE NOW,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,,,,,,,,2024-10-23 06:49:09,,,,,$123/night,,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,near Brevard,,,,,,,2024-10-23 06:49:09,,,,,$56/night,AVAILABLE NOW,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,,,,,,,,2024-10-23 06:49:09,,,,,$120/night,,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,near Asheville,,,,,,,2024-10-23 06:49:09,,,,,$81/night,AVAILABLE NOW,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,Gateway Nature Preserve,,,,,,,2024-10-23 06:49:09,,,,,$102/night,AVAILABLE NOW,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,near Asheville,,,,,,,2024-10-23 06:49:09,,,,,$49/night,AVAILABLE NOW,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,DT Brevard,,,,,,,2024-10-23 06:49:09,,,,,$60/night,AVAILABLE NOW,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,near Downtown Asheville,,,,,,,2024-10-23 06:49:09,,,,,$68/night,AVAILABLE NOW,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,near Brevard,,,,,,,2024-10-23 06:49:09,,,,,$150/night,AVAILABLE NOW,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,,,,,,,,2024-10-23 06:49:09,,,,,$65/night,AVAILABLE NOW,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,near DT Brevard,,,,,,,2024-10-23 06:49:09,,,,,$42/night,,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,near DT Brevard,,,,,,,2024-10-23 06:49:09,,,,,$49/night,AVAILABLE NOW,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,,,,,,,,2024-10-23 06:49:09,,,,,$40/night,AVAILABLE NOW,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,,,,,,,,2024-10-23 06:49:09,,,,,$51/night,AVAILABLE NOW,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,,,,,,,,2024-10-23 06:49:09,,,,,$68/night,AVAILABLE NOW,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,,,,,,,,2024-10-23 06:49:09,,,,,$53/night,AVAILABLE NOW,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,near Brevard,,,,,,,2024-10-23 06:49:09,,,,,$94/night,,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,near Brevard College,,,,,,,2024-10-23 06:49:09,,,,,$55/night,AVAILABLE NOW,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,Gateway Nature Preserve,,,,,,,2024-10-23 06:49:09,,,,,$85/night,AVAILABLE NOW,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,Downtown Brevard,,,,,,,2024-10-23 06:49:09,,,,,$67/night,AVAILABLE NOW,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,near Downtown Old Fort,,,,,,,2024-10-23 06:49:09,,,,,$97/night,AVAILABLE NOW,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,DT Brevard,,,,,,,2024-10-23 06:49:09,,,,,$51/night,AVAILABLE NOW,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,,,,,,,,2024-10-23 06:49:09,,,,,$56/night,AVAILABLE NOW,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,,,,,,,,2024-10-23 06:49:09,,,,,$155/night,AVAILABLE NOW,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,near Brevard,,,,,,,2024-10-23 06:49:09,,,,,$60/night,AVAILABLE NOW,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,,,,,,,,2024-10-23 06:49:09,,,,,$53/night,AVAILABLE NOW,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,near Brevard,,,,,,,2024-10-23 06:49:09,,,,,$79/night,AVAILABLE NOW,Data processed successfully
+https://www.petekey.com/vacation-rentals/results/,Near Asheville,,,,,,,2024-10-23 06:49:09,,,,,$87/night,AVAILABLE NOW,Data processed successfully
+http://www.wmdouglasasheville.com/,,,,,,,,,,,,,,,No unique URLs found
+https://www.whitneycre.com/,,,,,,,,,,,,,,,Room link retrieval failed
+https://www.rentahomeasheville.com/homes-for-rent-asheville,,,,,,,,,,,,,,,Room details retrieval failed
+http://www.thebayshorecompany.net/asheville-nc/rentals/,,,,,,,,,,,,,,,Room details retrieval failed
+https://www.allisonwhiteproperties.com/,,,,,,,,,,,,,,,Room link retrieval failed
+http://www.partnershippm.com/,,,,,,,,,,,,,,,Room link retrieval failed
+https://www.asherentalagency.com/vacancies,"329 Academy St - #201, Jefferson, NC 28640",,,,,,,2024-10-23 06:51:11,,,,,"$1,400",Available 11/08/2024,Data processed successfully
+https://www.asherentalagency.com/vacancies,"417 Will Vannoy Rd - #1 Upper, West Jefferson, NC 28694",,,,,,,2024-10-23 06:51:11,,,,,"$1,400",Available 12/09/2024,Data processed successfully
+https://www.asherentalagency.com/vacancies,"12442 NC Hwy 88 W - Unit C, Creston, NC 28615",,,,,,,2024-10-23 06:51:11,,,,,$650,Available NOW,Data processed successfully
+https://www.asherentalagency.com/vacancies,"533 Ashe Central School Rd, Jefferson, NC 28640",,,,,,,2024-10-23 06:51:11,,,,,"$2,500",Available NOW,Data processed successfully
+https://www.asherentalagency.com/vacancies,"101 A N Jefferson Ave, West Jefferson, NC 28694",,,,,,,2024-10-23 06:51:11,,,,,"$1,400",Available NOW,Data processed successfully
+https://www.asherentalagency.com/vacancies,"123 Buck Mtn Cir, West Jefferson, NC 28694",,,,,,,2024-10-23 06:51:11,,,,,"$1,500",Available NOW,Data processed successfully
+https://www.asherentalagency.com/vacancies,"N Third Ave - Lot, West Jefferson, NC 28694",,,,,,,2024-10-23 06:51:11,,,,,$200,Available NOW,Data processed successfully
+https://www.teamprism.com/,,,,,,,,,,,,,,,Room link retrieval failed
+https://www.carolinamtn.com/,,,,,,,,,,,,,,,Room link retrieval failed
+https://www.tonsofrentals.com/asheville-homes-for-rent?&sort=amount%7Cdesc,"643 Clearview Drive, Hendersonville, NC 28792",,,,,,,2024-10-23 06:52:21,,,,,"$1,495/mo.",Immediately,Data processed successfully
+https://www.tonsofrentals.com/asheville-homes-for-rent?&sort=amount%7Cdesc,"3 Dadoo Drive, Asheville, NC 28806",,,,,,,2024-10-23 06:52:21,,,,,"$1,995/mo.",Immediately,Data processed successfully
+https://www.tonsofrentals.com/asheville-homes-for-rent?&sort=amount%7Cdesc,"413 Pocono Court, Arden, NC 28704",,,,,,,2024-10-23 06:52:21,,,,,"$1,695/mo.",Immediately,Data processed successfully
+https://www.tonsofrentals.com/asheville-homes-for-rent?&sort=amount%7Cdesc,"33 Madeline Avenue, Asheville, NC 28806",,,,,,,2024-10-23 06:52:21,,,,,"$2,295/mo.",Immediately,Data processed successfully
+https://www.tonsofrentals.com/asheville-homes-for-rent?&sort=amount%7Cdesc,"165 Wiltshire Circle, Fletcher, NC 28732",,,,,,,2024-10-23 06:52:21,,,,,"$2,195/mo.",Immediately,Data processed successfully
+https://www.tonsofrentals.com/asheville-homes-for-rent?&sort=amount%7Cdesc,"71 East Street, Asheville, NC 28803",,,,,,,2024-10-23 06:52:21,,,,,"$2,195/mo.",Immediately,Data processed successfully
+https://www.tonsofrentals.com/asheville-homes-for-rent?&sort=amount%7Cdesc,"7 Shadowbrook Lane B, Weaverville, NC 28787",,,,,,,2024-10-23 06:52:21,,,,,"$1,350/mo.",10-25-2024,Data processed successfully
+https://www.tonsofrentals.com/asheville-homes-for-rent?&sort=amount%7Cdesc,"2670 Seminole Drive, Hendersonville, NC 28791",,,,,,,2024-10-23 06:52:21,,,,,"$2,595/mo.",12-01-2024,Data processed successfully
+https://www.tonsofrentals.com/asheville-homes-for-rent?&sort=amount%7Cdesc,"30 Cedar Street, Asheville, NC 28803",,,,,,,2024-10-23 06:52:21,,,,,"$2,395/mo.",11-15-2024,Data processed successfully
+https://www.tonsofrentals.com/asheville-homes-for-rent?&sort=amount%7Cdesc,"6 Chambers Garden Dr, Arden, NC 28704",,,,,,,2024-10-23 06:52:21,,,,,"$2,495/mo.",Immediately,Data processed successfully
+https://www.tonsofrentals.com/asheville-homes-for-rent?&sort=amount%7Cdesc,"234 Wash Creek Drive #A, Hendersonville, NC 28739",,,,,,,2024-10-23 06:52:21,,,,,"$1,895/mo.",11-01-2024,Data processed successfully
+https://www.tonsofrentals.com/asheville-homes-for-rent?&sort=amount%7Cdesc,"125 S. Sunberry Trail, Fletcher, NC 28732",,,,,,,2024-10-23 06:52:21,,,,,"$2,495/mo.",Immediately,Data processed successfully
+https://www.tonsofrentals.com/asheville-homes-for-rent?&sort=amount%7Cdesc,"705 N. Wild Oaks Lane, Hendersonville, NC 28791",,,,,,,2024-10-23 06:52:21,,,,,"$2,195/mo.",11-01-2024,Data processed successfully
+https://www.tonsofrentals.com/asheville-homes-for-rent?&sort=amount%7Cdesc,"9 White Ave, Asheville, NC 28803",,,,,,,2024-10-23 06:52:21,,,,,"$2,195/mo.",Immediately,Data processed successfully
+https://www.lakejamesrentalproperties.com/,,,,,,,,,,,,,,,Initial page scraping failed

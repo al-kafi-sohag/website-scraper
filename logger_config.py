@@ -1,6 +1,9 @@
 import logging
 import os
 from logging.handlers import RotatingFileHandler
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def setup_logger(name, log_file, level=logging.INFO):
     """Function to set up a logger with both file and console handlers."""
@@ -33,4 +36,3 @@ log_level = getattr(logging, log_level_str, logging.INFO)
 log_file = os.getenv('LOG_FILE', 'scraper.log')
 
 logger = setup_logger('scraper_logger', log_file, log_level)
-

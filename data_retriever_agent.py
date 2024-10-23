@@ -11,47 +11,49 @@ client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 prompt = """
 
-You are a data retrieval agent tasked with processing scraped data from a hotel booking website. Your job is to extract details: room name, location and price information into a structured JSON format.
+You are a data extraction agent tasked with processing data from a hotel booking website. Your job is to identify and extract the details of the house  address, price and availablity into a structured JSON format. Adhere strictly to the following instructions:
 
-Once you identify the data, output it in the following JSON format:
+1. Extract only data where the room name, location, and price are clearly mentioned. If any of these details are missing, exclude that entry.
+
+2. Structure your output in the JSON format below, ensuring consistency and completeness:
 
 {
   "status": 1,
-  "message": "Successfully retrived the data",
+  "message": "Successfully retrieved the data",
   "data": [
-      {
-          "name": "name of the room",
-          "address": "address of the room",
-          "price": "price with currency if avaiable"
-      },
-      {
-          "name": "name of another room",
-          "address": "address of another room",
-          "price": "price with currency if avaiable"
-      }
+    {
+      "address": "address of the room if data is present, else keep it empty",
+      "price": "price with currency if data is present, else keep it empty",
+      "availability": "availability status if present, else keep it empty"
+    },
+    {
+      "address": "another address of the room if data is present, else keep it empty",
+      "price": "another price with currency if data is present, else keep it empty",
+      "availability": "another availability status if present, else keep it empty"
+    }
   ]
 }
 
-If no suitable data is found, return:
+3. If no suitable data is identified, return the following:
 
 {
   "status": 0,
   "message": "No data found",
-  "data": None
+  "data": null
 }
 
-If an error occurs or if you are unable to process the request, return:
+4. If an error occurs during processing, or you are unable to fulfill the request, return the following:
 
 {
   "status": -1,
-  "message": "add the error",
-  "data": None
+  "message": "Include a brief description of the error",
+  "data": null
 }
 
-1. Only include hotels and rooms where the name, location and price are specified. 
-2. Ensure accuracy and completeness when listing room types and pricing options.
-3. Proceed with the analysis and provide the most accurate result.
-4. Do not include any additional text, comments, or explanations outside of the JSON output. The response must strictly adhere to the JSON format as shown above.
+5. Ensure that the output strictly adheres to the JSON format, without any additional explanations or comments outside of the JSON response.
+
+6. Proceed with the extraction task and provide the most accurate and complete result possible.
+
 """
 
 def connect_to_ai(data):
@@ -144,8 +146,8 @@ def retrieve_room_data(data):
     logger.info(f"Room data retrieval completed. Total results: {len(result)}")
     
     if result:
-        logger.debug("Retrieved room data (first 3 entries):")
-        logger.debug(json.dumps(result[:3], indent=2, ensure_ascii=False))
+        logger.debug("Retrieved room data:")
+        logger.debug(json.dumps(result, indent=2, ensure_ascii=False))
     else:
         logger.warning("No room data retrieved")
 
