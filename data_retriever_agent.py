@@ -11,11 +11,11 @@ client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 prompt = """
 
-You are a data extraction agent tasked with processing data from a hotel booking website. Your job is to identify and extract the details of the house  address, price and availablity into a structured JSON format. Adhere strictly to the following instructions:
+You are a data extraction agent tasked with processing data from a hotel booking website. Your job is to identify and extract details such as the house address, price, availability, number of rooms, and number of baths, and output this information into a structured JSON format. Adhere strictly to the following instructions:
 
-1. Extract only data where the room name, location, and price are clearly mentioned. If any of these details are missing, exclude that entry.
+Extract only data where the room name, location, price, number of rooms, and baths are clearly mentioned. If any of these details are missing, exclude that entry.
 
-2. Structure your output in the JSON format below, ensuring consistency and completeness:
+Structure your output in the JSON format below, ensuring consistency and completeness:
 
 {
   "status": 1,
@@ -24,15 +24,20 @@ You are a data extraction agent tasked with processing data from a hotel booking
     {
       "address": "address of the room if data is present, else keep it empty",
       "price": "price with currency if data is present, else keep it empty",
-      "availability": "availability status if present, else keep it empty"
+      "availability": "availability status if present, else keep it empty",
+      "beds": "number of beds if data is present, else keep it empty",
+      "baths": "number of baths if data is present, else keep it empty"
     },
     {
       "address": "another address of the room if data is present, else keep it empty",
       "price": "another price with currency if data is present, else keep it empty",
-      "availability": "another availability status if present, else keep it empty"
+      "availability": "another availability status if present, else keep it empty",
+      "beds": "another number of beds if data is present, else keep it empty",
+      "baths": "another number of baths if data is present, else keep it empty"
     }
   ]
 }
+
 
 3. If no suitable data is identified, return the following:
 

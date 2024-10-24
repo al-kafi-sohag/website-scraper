@@ -70,21 +70,21 @@ def main(base_url):
     if not soup:
         note = "Initial page scraping failed"
         logger.error(note)
-        save([{**data_to_save, 'Note': note}])
+        save([{**data_to_save, 'Note': note}], 'error')
         return
     
     unique_urls = get_unique_urls(soup, base_url)
     if not unique_urls:
         note = "No unique URLs found"
         logger.error(note)
-        save([{**data_to_save, 'Note': note}])
+        save([{**data_to_save, 'Note': note}], 'error')
         return
     
     link = retrieve_room_link(unique_urls)
     if not link:
         note = "Room link retrieval failed"
         logger.error(note)
-        save([{**data_to_save, 'Note': note}])
+        save([{**data_to_save, 'Note': note}], 'error')
         return
     
     data_to_save['URL_Scrapped'] = link
@@ -94,7 +94,7 @@ def main(base_url):
     if not room_page_soup:
         note = "Room page scraping failed"
         logger.error(note)
-        save([{**data_to_save, 'Note': note}])
+        save([{**data_to_save, 'Note': note}], 'error')
         return
     
     room_page_text = process_room_soup(room_page_soup)
@@ -102,13 +102,11 @@ def main(base_url):
     if not room_details:
         note = "Room details retrieval failed"
         logger.error(note)
-        save([{**data_to_save, 'Note': note}])
+        save([{**data_to_save, 'Note': note}], 'error')
         return
     
-    # Add this debugging line
     logger.debug(f"Room details: {room_details}")
 
-    # Modify this part
     if isinstance(room_details, list):
         for item in room_details:
             if isinstance(item, tuple) and len(item) == 2:
@@ -119,7 +117,7 @@ def main(base_url):
     else:
         logger.error(f"Unexpected type for room_details: {type(room_details)}")
         note = "Room details in unexpected format"
-        save([{**data_to_save, 'Note': note}])
+        save([{**data_to_save, 'Note': note}], 'error')
         return
     
     note = "Room details retrieved successfully"
@@ -128,19 +126,19 @@ def main(base_url):
     if not processed_data:
         note = "Data processing failed"
         logger.error(note)
-        save([{**data_to_save, 'Note': note}])
+        save([{**data_to_save, 'Note': note}], 'error')
         return
     
     note = "Data processed successfully"
     
     # Save processed data
-    if save([{**item, 'Note': note} for item in processed_data]):
+    if save([{**item, 'Note': note} for item in processed_data], 'success'):
         logger.info("Successfully saved processed data")
         return True
     else:
         note = "Processed data saving failed"
         logger.error(note)
-        save([{**data_to_save, 'Note': note}])
+        save([{**data_to_save, 'Note': note}], 'error')
         return
 
 def process_websites(csv_path, max_workers=int(os.getenv('MAX_WORKERS', 5))):
