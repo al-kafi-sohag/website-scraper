@@ -164,5 +164,7 @@ def process_websites(csv_path, max_workers=int(os.getenv('MAX_WORKERS', 5))):
     #     main(url)
 
 if __name__ == "__main__":
-    csv_path = 'data/websites.csv'
-    process_websites(csv_path)
+    # csv_path = 'data/websites.csv'
+    # process_websites(csv_path)
+    
+    main('https://www.kipsbaycourt.com/')

@@ -4,6 +4,7 @@ from groq import Groq
 from dotenv import load_dotenv
 from SimplerLLM.tools.json_helpers import extract_json_from_text
 from logger_config import logger
+from connect_ai import connect_to_ai  # Import the correct function
 
 load_dotenv()
 
@@ -60,25 +61,6 @@ Structure your output in the JSON format below, ensuring consistency and complet
 6. Proceed with the extraction task and provide the most accurate and complete result possible.
 
 """
-
-def connect_to_ai(data):
-    logger.info("Initiating AI connection for data retrieval")
-    try:
-        messages = [
-            {"role": "system", "content": prompt},
-            {"role": "user", "content": f"Extract the room data from here: {data}"}
-        ]
-        response = client.chat.completions.create(model=os.getenv("MODEL"), messages=messages)
-        if response and response.choices:
-            logger.info("Successfully received AI response")
-            logger.debug(f"Response: {response.choices[0].message.content[:100]}...")
-            return response.choices[0].message.content
-        else:
-            logger.warning("AI returned an empty or invalid response")
-            return None
-    except Exception as e:
-        logger.error(f"Error during AI connection: {str(e)}")
-        return None
 
 def extract_data(response):
     logger.info("Extracting data from AI response")
@@ -140,7 +122,7 @@ def retrieve_room_data(data):
     for index, chunk in enumerate(chunked_data, 1):
         logger.info(f"Processing chunk {index} of {len(chunked_data)}")
         
-        response = connect_to_ai(chunk)
+        response = connect_to_ai(prompt, f"Extract the room data from here: {chunk}")
         if response:
             chunk_result = extract_data(response)
             if chunk_result:

@@ -3,6 +3,7 @@ from groq import Groq
 from dotenv import load_dotenv
 from SimplerLLM.tools.json_helpers import extract_json_from_text
 from logger_config import logger
+from connect_ai import connect_to_ai
 
 load_dotenv()
 
@@ -18,29 +19,55 @@ COMMON_ENDPOINTS = [
     "/rooms-for-rent",
     "/rental_listings",
     "/rental",
+    "/search-results",
+    "/available-rooms",
+    "/accommodation",
+    "/vacation-rentals",
+    "/holiday-homes",
+    "/property-listings",
+    "/short-term-rentals",
+    "/long-term-rentals",
+    "/apartments-for-rent",
+    "/rental-properties",
+    "/stay",
+    "/booking",
+    "/reserve",
+    "/book-now",
+    "/lodging",
+    "/find-accommodation",
+    "/available-properties",
+    "/housing",
+    "/place-to-stay",
+    "/stay-options",
+    "/rentals",
+    "/room-availability",
+    "/bed-and-breakfast",
+    "/bnb-listings",
+    "/rental-units",
+    "/residence",
+    "/vacancy",
+    "/hotels",
+    "/find-hotels",
+    "/hotel-listings",
+    "/listing",
 ]
+
 
 formatted_endpoints = ", ".join(f"`{endpoint}`" for endpoint in COMMON_ENDPOINTS)
 
 prompt = f"""
-You are an AI agent tasked with analyzing an array of URLs scraped from an online hotel listing website. Your job is to identify and return the URL that leads to a page listing all available hotels, houses, suites. 
+You are an AI agent tasked with analyzing an array of URLs scraped from an online hotel listing website. Your job is to identify and return the URL that most accurately leads to a page listing all available hotels, houses, suites. 
 The page should include room types, rates, and descriptions. Common endpoints for such pages might include URLs that contain phrases like {formatted_endpoints} or similar. 
 
-Once you identify the correct URL, output it in the following JSON format:
+Once you identify the most accurate URL, output it in the following JSON format:
 
 {{
   "status": 1,
-  "message": "Successfully retrived the url",
+  "message": "Successfully retrieved the most accurate URL",
   "url": "URL_here"
 }}
 
-If no suitable URL is found, return:
-
-{{
-  "status": 0,
-  "message": "No Suitable URL",
-  "url": null
-}}
+If no highly suitable URL is available, select the best possible match that most closely aligns with the criteria.
 
 If an error occurs or if you are unable to process the request, return:
 
@@ -49,31 +76,13 @@ If an error occurs or if you are unable to process the request, return:
   "message": add the error,
   "url": null
 }}
-Make sure to analyze the URLs carefully, and prioritize URLs that include terms indicating a room list page. 
-Example terms include {formatted_endpoints} or similar. 
+
+Make sure to analyze the URLs carefully, prioritizing those that include terms indicating a room list page. Example terms include {formatted_endpoints} or similar.
 Proceed with the analysis and provide the most accurate result.
 Do not include any additional text, comments, or explanations outside of the JSON output. The response must strictly adhere to the JSON format as shown above.
 """
 
-def connect_to_ai(urls):
-    logger.info("Initiated Link retriever agent")
-    try:
-        messages = [
-            {"role": "system", "content": prompt},
-            {"role": "user", "content": f"Find the Room page url. From here:{urls}"}
-        ]
-        response = client.chat.completions.create(model=os.getenv("MODEL"), messages=messages)
-        if response:
-            logger.info("Received response from AI")
-            return response.choices[0].message.content
-        else:
-            logger.warning("AI is returning empty response")
-            return None
-            
-    except Exception as e:
-        logger.error(f"Error in connect_to_ai: {e}")
-        return None
-  
+
 def extract_link(response):
     logger.info("Initiated extracting data")
     try:
@@ -106,7 +115,8 @@ def extract_link(response):
         return None
 
 def retrieve_room_link(urls):
-    response = connect_to_ai(urls)
+    logger.info("Initiated Link retriever agent")
+    response = connect_to_ai(prompt, f"Find the Room page url. From here:{urls}")
     if response:
         url = extract_link(response)
         logger.info(f"Processed all {len(urls)} urls")

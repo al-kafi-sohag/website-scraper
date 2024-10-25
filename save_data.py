@@ -25,7 +25,8 @@ def generate_filepath(type):
     if type == 'success':
         return os.path.join('results', 'results.csv')
     else:
-        return os.path.join('results', 'errors.csv')
+        # current_time = datetime.now().strftime("%Y%m%d_%H%M%S")
+        return os.path.join('results', f'errors.csv')
 
 def write_csv(filepath, data, mode='a'):
     try:

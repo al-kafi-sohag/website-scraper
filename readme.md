@@ -29,15 +29,15 @@ The Website Scraper is designed to extract data from multiple websites with vary
    On Mac/Linux:
 
    ```sh
-    python -m venv venv
-    source venv/bin/activate
+   python -m venv venv
+   source venv/bin/activate
    ```
 
    On Windows:
 
    ```sh
-    python -m venv venv
-    venv\Scripts\activate
+   python -m venv venv
+   venv\Scripts\activate
    ```
 
 3. Install the required packages:
@@ -58,13 +58,16 @@ The Website Scraper is designed to extract data from multiple websites with vary
    GROQ_API_KEY="your_groq_api_key_here"
    MODEL="llama-3.1-70b-versatile"
    MAX_WORDS=1000
+   GEOCODING_SERVICE="opencage"  # or "google"
+   OPENCAGE_API_KEY="your_opencage_api_key_here"
+   GOOGLE_API_KEY="your_google_api_key_here"
    ```
 
-   Make sure to replace `your_groq_api_key_here` with your actual Groq API key.
+   Make sure to replace `your_groq_api_key_here`and `your_opencage_api_key_here`, or `your_google_api_key_here` with your actual API keys.
 
 ## Usage
 
-1. Add url inside `main()` in `main.py` file.
+1. Add a URL inside `main()` in the `main.py` file.
 
    ```python
    main('https://www.tonsofrentals.com')
@@ -76,25 +79,22 @@ The Website Scraper is designed to extract data from multiple websites with vary
    python main.py
    ```
 
-3. Wait for the scraping to Complete.
+3. Wait for the scraping to complete.
 
 4. View the Results:
-   Open the `result/` folder and locate `result.csv` to review the results.
+   Open the `results/` folder and locate `results.csv` to review the results.
 
 ## Project Structure
 
 - `main.py`: Core script that orchestrates the scraping process and calls other modules.
-- `link_retriever_agent.py`: Contains logic for identifying the correct room listing URL.
+- `link_retriever_agent.py`: Contains logic for identifying the correct room listing URL using AI.
 - `data_retriever_agent.py`: Handles the extraction of room details from scraped content.
+- `process_data.py`: Processes and structures the extracted data.
+- `save_data.py`: Manages saving the processed data to CSV files.
+- `geolocation.py`: Retrieves geolocation data for addresses.
 - `requirements.txt`: Lists all Python dependencies required for the project.
 - `.env.example`: Example environment file for storing configuration and API keys.
 - `README.md`: Project documentation and usage instructions.
-
-Key files:
-
-- `main.py`: Initiates the scraping process, manages URL collection, and coordinates between modules.
-- `link_retriever_agent.py`: Uses AI to analyze URLs and identify the most relevant room listing page.
-- `data_retriever_agent.py`: Employs AI to parse scraped content and extract structured room data.
 
 ## Contributing
 

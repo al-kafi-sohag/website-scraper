@@ -19,7 +19,9 @@ def scrape_data(url):
     logger.info(f"Initiated scraper for link: {url}")
     try:
         chrome_options = Options()
-        # chrome_options.add_argument("--headless")
+        chrome_options.add_argument("--headless")
+        chrome_options.add_argument("--start-minimized")
+        chrome_options.add_argument("--enable-gpu")
 
         service = Service(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=chrome_options)
@@ -40,11 +42,11 @@ def scrape_data(url):
             driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
             
             # Wait for new content to load
-            time.sleep(10)
+            time.sleep(int(os.getenv('WAITING_TIME', 30)))
             
             # Calculate new scroll height and compare with last scroll height
             new_height = driver.execute_script("return document.body.scrollHeight")
-            if new_height == last_height:
+            if abs(new_height - last_height) <= 0.05 * last_height:
                 break
             last_height = new_height
 
