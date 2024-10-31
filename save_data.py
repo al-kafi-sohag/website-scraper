@@ -4,6 +4,9 @@ import os
 from datetime import datetime
 from logger_config import logger
 
+# Add at the top of the file with other globals
+_current_error_filepath = None
+
 def load_json_data(json_string):
     try:
         data = json.loads(json_string)
@@ -22,11 +25,21 @@ def create_results_folder():
         return
 
 def generate_filepath(type):
+    global _current_error_filepath
+    
     if type == 'success':
         return os.path.join('results', 'results.csv')
     else:
-        # current_time = datetime.now().strftime("%Y%m%d_%H%M%S")
-        return os.path.join('results', f'errors.csv')
+        if _current_error_filepath:
+            return _current_error_filepath
+            
+        counter = 1
+        while True:
+            filepath = os.path.join('results', f'errors-{counter}.csv')
+            if not os.path.exists(filepath):
+                _current_error_filepath = filepath
+                return filepath
+            counter += 1
 
 def write_csv(filepath, data, mode='a'):
     try:

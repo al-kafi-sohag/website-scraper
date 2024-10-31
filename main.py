@@ -3,15 +3,14 @@ import re
 import os
 import json
 import time
+import csv
 from dotenv import load_dotenv
-from bs4 import BeautifulSoup
 from link_retriever_agent import retrieve_room_link
 from data_retriever_agent import retrieve_room_data
 from scrapper import scrape_data
 from logger_config import logger
 from save_data import save
 from process_data import process
-import csv
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 load_dotenv()
@@ -164,7 +163,7 @@ def process_websites(csv_path, max_workers=int(os.getenv('MAX_WORKERS', 5))):
     #     main(url)
 
 if __name__ == "__main__":
-    # csv_path = 'data/websites.csv'
-    # process_websites(csv_path)
+    csv_path = 'data/websites.csv'
+    process_websites(csv_path)
     
-    main('https://www.kipsbaycourt.com/')
+    # main('https://www.kipsbaycourt.com/')

@@ -15,13 +15,16 @@ from selenium.common.exceptions import TimeoutException
 
 load_dotenv()
 
-def scrape_data(url):
+def scrape_data(url, wait_time=int(os.getenv('WAITING_TIME', 30))):
     logger.info(f"Initiated scraper for link: {url}")
     try:
         chrome_options = Options()
         chrome_options.add_argument("--headless")
         chrome_options.add_argument("--start-minimized")
         chrome_options.add_argument("--enable-gpu")
+        chrome_options.add_argument("--log-level=3")
+        chrome_options.add_argument("--silent")
+        chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])
 
         service = Service(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=chrome_options)
@@ -32,32 +35,24 @@ def scrape_data(url):
             EC.presence_of_element_located((By.TAG_NAME, "body"))
         )
         
-        # Wait for new content to load
-        time.sleep(int(os.getenv('WAITING_TIME', 30)))
+        time.sleep(wait_time)
             
-        # Scroll to the bottom until no new content is loaded
         last_height = driver.execute_script("return document.body.scrollHeight")
         while True:
-            # Scroll down to the bottom
             driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
             
-            # Wait for new content to load
-            time.sleep(int(os.getenv('WAITING_TIME', 30)))
+            time.sleep(wait_time)
             
-            # Calculate new scroll height and compare with last scroll height
             new_height = driver.execute_script("return document.body.scrollHeight")
             if abs(new_height - last_height) <= 0.05 * last_height:
                 break
             last_height = new_height
 
-        # Get the page source after scrolling
         page_source = driver.page_source
 
-        # Parse with BeautifulSoup
         soup = BeautifulSoup(page_source, 'html.parser')
         logger.info(f"Successfully scraped the data for link: {url}")
 
-        # Close the browser
         # driver.save_screenshot("screenshot.png")
         driver.quit()
 
