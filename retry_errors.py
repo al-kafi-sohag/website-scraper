@@ -111,10 +111,49 @@ def process_url(url_data):
                     continue
                 
                 data_to_save['URL_Scrapped'] = link
-                note = "Room link retrieved successfully"
-                logger.info(f"Successfully re-scraped {url} on attempt {attempt + 1}")
-                save([{**data_to_save, 'Note': note}], 'success')
-                return True
+                
+                room_page_soup = scrape_data(link, wait_time=wait_time)
+                if not room_page_soup:
+                    note = "Room page scraping failed"
+                    logger.error(f"{note} for {url} - attempt {attempt + 1}")
+                    continue
+                
+                room_page_text = process_room_soup(room_page_soup)
+                room_details = get_room_details(room_page_text)
+                if not room_details:
+                    note = "Room details retrieval failed"
+                    logger.error(f"{note} for {url} - attempt {attempt + 1}")
+                    continue
+                
+                if isinstance(room_details, list):
+                    for item in room_details:
+                        if isinstance(item, tuple) and len(item) == 2:
+                            key, value = item
+                            data_to_save[key] = value
+                        else:
+                            logger.warning(f"Unexpected item in room_details: {item}")
+                else:
+                    note = "Room details in unexpected format"
+                    logger.error(f"{note} for {url} - attempt {attempt + 1}")
+                    save([{**data_to_save, 'Note': note}], 'error')
+                    continue
+                
+                processed_data = process(json.dumps(room_details), link)
+                if not processed_data:
+                    note = "Data processing failed"
+                    logger.error(f"{note} for {url} - attempt {attempt + 1}")
+                    save([{**data_to_save, 'Note': note}], 'error')
+                    continue
+                
+                note = "Data processed successfully"
+                if save([{**item, 'Note': note} for item in processed_data], 'success'):
+                    logger.info(f"Successfully processed data for {url} on attempt {attempt + 1}")
+                    return True
+                else:
+                    note = "Processed data saving failed"
+                    logger.error(f"{note} for {url} - attempt {attempt + 1}")
+                    save([{**data_to_save, 'Note': note}], 'error')
+                    continue
                 
         elif error_category == 'data_error':
             wait_time = RETRY_WAIT_TIMES['data_error']
@@ -249,6 +288,6 @@ def get_latest_error_file():
     return os.path.join('results', latest_file)
 
 if __name__ == "__main__":
-    # error_csv_path = 'results/errors.csv'
-    error_csv_path = get_latest_error_file()
+    error_csv_path = 'results/errors_nc_all.csv'
+    # error_csv_path = get_latest_error_file()
     main_retry(error_csv_path)
