@@ -288,6 +288,6 @@ def get_latest_error_file():
     return os.path.join('results', latest_file)
 
 if __name__ == "__main__":
-    error_csv_path = 'results/errors_nc_all.csv'
-    # error_csv_path = get_latest_error_file()
+    # error_csv_path = 'results/errors_nc_all.csv'
+    error_csv_path = get_latest_error_file()
     main_retry(error_csv_path)

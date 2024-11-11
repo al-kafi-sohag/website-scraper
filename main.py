@@ -1,8 +1,5 @@
-import requests
-import re
 import os
 import json
-import time
 import csv
 from dotenv import load_dotenv
 from link_retriever_agent import retrieve_room_link
@@ -17,12 +14,12 @@ load_dotenv()
 
 def get_unique_urls(soup, base_url):
     logger.info("Initiating URL collection")
-    base_url = base_url.rstrip('/')  # Remove trailing slash once
+    base_url = base_url.rstrip('/')
     unique_urls = set()
     
     try:
         for link in soup.find_all('a', href=True):
-            href = link['href'].lstrip('/')  # Remove leading slash if present
+            href = link['href'].lstrip('/')
             
             if not href.startswith(('http://', 'https://')):
                 href = f"{base_url}/{href}"
@@ -130,7 +127,6 @@ def main(base_url):
     
     note = "Data processed successfully"
     
-    # Save processed data
     if save([{**item, 'Note': note} for item in processed_data], 'success'):
         logger.info("Successfully saved processed data")
         return True
@@ -158,9 +154,6 @@ def process_websites(csv_path, max_workers=int(os.getenv('MAX_WORKERS', 5))):
                 logger.info(f"Completed processing for {url}")
             except Exception as exc:
                 logger.error(f"Processing for {url} generated an exception: {exc}")
-    
-    # for url in websites:
-    #     main(url)
 
 if __name__ == "__main__":
     csv_path = 'data/websites.csv'
