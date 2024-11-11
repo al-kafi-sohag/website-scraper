@@ -1,7 +1,6 @@
 import json
 from datetime import datetime
 from logger_config import logger
-from address_retriever_agent import retrieve_address
 
 def extract_fields(item):
     return (

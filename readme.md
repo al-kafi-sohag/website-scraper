@@ -1,105 +1,110 @@
 # Website Scraper
 
-The Website Scraper is designed to extract data from multiple websites with varying content structures and intelligently process the information using AI. It combines traditional web scraping techniques with AI-driven parsing and processing capabilities, enabling it to adapt to different webpage layouts and extract relevant data more accurately.
+A smart web scraping tool that automatically extracts and processes hotel listing information from various websites using artificial intelligence.
 
-## Features
+## What It Does
 
-- Multi-Site Scraping: Capable of extracting data from various hotel booking websites.
-- Intelligent URL Analysis: Automatically identifies the most relevant page for room listings.
-- AI-Powered Data Extraction: Utilizes Groq's advanced AI to parse and extract room details accurately.
-- Adaptive Scraping: Handles different webpage layouts and content structures.
-- Bulk URL Processing: Efficiently processes multiple URLs from a single website.
-- Structured Data Output: Presents extracted data in a clean, JSON format.
-- Error Handling: Robust error management for various scraping scenarios.
-- Scalable Architecture: Designed to handle large volumes of data and multiple websites.
-- Customizable AI Prompts: Easily adjustable AI instructions for different scraping tasks.
-- Chunked Processing: Breaks down large text data for more effective AI analysis.
+This tool helps you:
 
-## Installation
+- Automatically collect hotel room information from different booking websites
+- Convert messy web data into clean, organized information
+- Save the results in an easy-to-read format (CSV file)
+- Get accurate location data for each property
 
-1. Clone the repository:
+## Setup
+
+1. Get the code:
 
    ```sh
    git clone https://github.com/al-kafi-sohag/website-scraper.git
    cd website-scraper
    ```
 
-2. Create a virtual environment and activate it:
-
-   On Mac/Linux:
+2. Set up your workspace:
 
    ```sh
    python -m venv venv
+
+   # For Mac/Linux:
    source venv/bin/activate
-   ```
 
-   On Windows:
-
-   ```sh
-   python -m venv venv
+   # For Windows:
    venv\Scripts\activate
    ```
 
-3. Install the required packages:
+3. Install required packages:
 
    ```sh
    pip install -r requirements.txt
    ```
 
-4. Copy the example environment file and configure it:
+4. Set up your settings:
+
+   - Copy `.env.example` to `.env`
+   - Open `.env` and configure your settings:
+
+   ```env
+   # Choose AI provider (groq or gemini)
+   AI_PROVIDER="gemini"
+   GROQ_API_KEY="your_key_here"
+   GEMINI_API_KEY="your_key_here"
+
+   # Choose where to save results (local, google-sheet, or both)
+   RESULT="local"
+
+   # Configure logging
+   LOG_LEVEL="ERROR"  # Options: DEBUG, INFO, WARNING, ERROR, CRITICAL
+   LOG_FILE="scraper.log"
+
+   # Set scraping parameters
+   WAITING_TIME="20"
+   MAX_WORDS=10000
+   MAX_WORKERS=5
+
+   # Choose geocoding service (google or opencage)
+   GEOCODING_SERVICE="opencage"
+   OPENCAGE_API_KEY="your_key_here"
+   GOOGLE_API_KEY="your_key_here"
+   ```
+
+   Note: You only need to add the API key for your chosen AI provider and geocoding service.
+
+## How to Use
+
+1. Add your website URLs to `data/websites.csv`
+
+2. Run the scraper interface:
 
    ```sh
-   cp .env.example .env
+   python scraper_interface.py
    ```
 
-   Then, edit the `.env` file and add your API keys:
+3. Follow the interactive prompts to:
 
-   ```
-   GROQ_API_KEY="your_groq_api_key_here"
-   MODEL="llama-3.1-70b-versatile"
-   MAX_WORDS=1000
-   GEOCODING_SERVICE="opencage"  # or "google"
-   OPENCAGE_API_KEY="your_opencage_api_key_here"
-   GOOGLE_API_KEY="your_google_api_key_here"
-   ```
+   - Start the main scraping process
+   - Process addresses (optional)
+   - Add Google Maps links (optional)
+   - Retry any failed operations (optional)
 
-   Make sure to replace `your_groq_api_key_here`and `your_opencage_api_key_here`, or `your_google_api_key_here` with your actual API keys.
+4. Find your results in the `results/results.csv` file
 
-## Usage
+## Key Features
 
-1. Add a URL inside `main()` in the `main.py` file.
+- Works with multiple hotel booking websites
+- Uses AI to understand and extract information accurately
+- Handles different website layouts automatically
+- Processes multiple URLs efficiently
+- Includes location data for each property
+- Manages errors gracefully
 
-   ```python
-   main('https://www.tonsofrentals.com')
-   ```
+## Need Help?
 
-2. Run the `main.py` application:
+Feel free to:
 
-   ```sh
-   python main.py
-   ```
-
-3. Wait for the scraping to complete.
-
-4. View the Results:
-   Open the `results/` folder and locate `results.csv` to review the results.
-
-## Project Structure
-
-- `main.py`: Core script that orchestrates the scraping process and calls other modules.
-- `link_retriever_agent.py`: Contains logic for identifying the correct room listing URL using AI.
-- `data_retriever_agent.py`: Handles the extraction of room details from scraped content.
-- `process_data.py`: Processes and structures the extracted data.
-- `save_data.py`: Manages saving the processed data to CSV files.
-- `geolocation.py`: Retrieves geolocation data for addresses.
-- `requirements.txt`: Lists all Python dependencies required for the project.
-- `.env.example`: Example environment file for storing configuration and API keys.
-- `README.md`: Project documentation and usage instructions.
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+- Open an issue for problems
+- Suggest improvements
+- Contribute to the code
 
 ## License
 
-This project is licensed under the MIT License.
+MIT License - Feel free to use and modify this tool for your needs.
